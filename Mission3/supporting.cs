@@ -14,9 +14,15 @@ namespace Mission3
 
         public void printBoard(string[] choices)
         {
-            Console.WriteLine(choices[0] + "  " + choices[1] + "  " + choices[2]);
-            Console.WriteLine(choices[3] + "  " + choices[4] + "  " + choices[5]);
-            Console.WriteLine(choices[6] + "  " + choices[7] + "  " + choices[8]);
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", choices[0], choices[1], choices[2]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", choices[3], choices[4], choices[5]);
+            Console.WriteLine("_____|_____|_____ ");
+            Console.WriteLine("     |     |      ");
+            Console.WriteLine("  {0}  |  {1}  |  {2}", choices[6], choices[7], choices[8]);
+            Console.WriteLine("     |     |      ");
         }
 
         public int checkWinner(string[] choices)

@@ -31,6 +31,7 @@ namespace Mission3
 
                 Console.WriteLine("Player 1: X's Player 2: O's");
 
+                Console.WriteLine("");
                 support.printBoard(choices);
                 Console.WriteLine("");
                 //print board here calling supporting class
@@ -40,6 +41,7 @@ namespace Mission3
                 choices[place1-1] = "X";
                 tieFlag++;
 
+                Console.WriteLine("");
                 support.printBoard(choices);
                 Console.WriteLine("");
                 if (support.checkWinner(choices) != -1)
@@ -54,6 +56,7 @@ namespace Mission3
                 }
 
                 Console.WriteLine("Player 1: X's Player 2: O's");
+                Console.WriteLine("");
 
                 //print board here calling supporting class
 
